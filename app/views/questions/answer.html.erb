@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="card text-center">
+    <form action="ask" data-turbo="false" class="card-header">
+      <input type="text" name="answer">
+      <input type="submit" value="Ask something" class="btn btn-dark" >
+    </form>
+
+    <div class="card-body">
+      <h2> you : <%= @question%> </h2>
+      <h2> stupid coach : <%= @answer%> </h2>
+
+      <button type="button" class="btn btn-dark">
+        <%= link_to 'I have an other one', ask_path %>
+      </button>
+    </div>
+  </div>
+</div>
